@@ -28,5 +28,13 @@
 	<p>
 		I had to Google how to hide an element until hovering over it, as well as changing the cursor to a particular cursor. 
 	</p>
+
+	<h4 class="blog-post">10/24 - Assignment #2</h4>
+	<p>
+		This assignment was a bit challenging getting started. I've done some JavaScript before, however it was generally to do specific things for building a page dynamically based on a JSON file. I struggled getting the event listeners working, until I realized that I needed to loop through the elements when using the getElementsByClassName. Once I got that concept down the rest of the assignment was relatively simple. 
+	</p>
+	<p>
+		I did run into an issue when creating the todo note with the correct input fields. The way I was creating it was by just editing the innerHTML to match the actual HTML code and putting that after a appendChild to create the div. What I failed to realize was that when doing the appendChild, it creates elements in the DOM rather than just editing the source code. Therefore all of my when/where/who fields were being placed after the end of the todo-body div. I had to then change everything so I could just use appendChild to add the elements. Once it was done it seemed like a much easier implementation anyway and would work for scalability if I ever needed to add new input fields. 
+	</p>
   </body>
 </html>
