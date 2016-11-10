@@ -20,21 +20,36 @@
 
 	<h4 class="blog-post">10/11 - Assignment #1</h4>
 	<p>
-		This assignment wasn't too challenging, however it required me to research and loko into various parts of CSS which I wasn't aware of. I struggled trying to get the todo notes to be responsive when the page size was changed until I learned about display: flex. I found that just doing a simple Google search for CSS *insert what I'm trying to accomplish* usually brough up a w3schools page with lots of answers regarding CSS and I was able to implement what I wanted based on the documentation. 
+		This assignment wasn't too challenging, however it required me to research and look into various parts of CSS which I wasn't aware of. I struggled trying to get the todo notes to be responsive when the page size was changed until I learned about display: flex. I found that just doing a simple Google search for CSS *insert what I'm trying to accomplish* usually brough up a w3schools page with lots of answers regarding CSS and I was able to implement what I wanted based on the documentation.
 	</p>
 	<p>
-		I found that I already knew the basics of CSS like creating a circle and how to change colors and various hover elements. I did learn about stacking effects, such as hovering the todo note would cause the x to show in the corner. The w3schools website was an extremely useful resource for this assignment and helped me accomplish alot of what I did. 
+		I found that I already knew the basics of CSS like creating a circle and how to change colors and various hover elements. I did learn about stacking effects, such as hovering the todo note would cause the x to show in the corner. The w3schools website was an extremely useful resource for this assignment and helped me accomplish alot of what I did.
 	</p>
 	<p>
-		I had to Google how to hide an element until hovering over it, as well as changing the cursor to a particular cursor. 
+		I had to Google how to hide an element until hovering over it, as well as changing the cursor to a particular cursor.
 	</p>
 
 	<h4 class="blog-post">10/24 - Assignment #2</h4>
 	<p>
-		This assignment was a bit challenging getting started. I've done some JavaScript before, however it was generally to do specific things for building a page dynamically based on a JSON file. I struggled getting the event listeners working, until I realized that I needed to loop through the elements when using the getElementsByClassName. Once I got that concept down the rest of the assignment was relatively simple. 
+		This assignment was a bit challenging getting started. I've done some JavaScript before, however it was generally to do specific things for building a page dynamically based on a JSON file. I struggled getting the event listeners working, until I realized that I needed to loop through the elements when using the getElementsByClassName. Once I got that concept down the rest of the assignment was relatively simple.
 	</p>
 	<p>
-		I did run into an issue when creating the todo note with the correct input fields. The way I was creating it was by just editing the innerHTML to match the actual HTML code and putting that after a appendChild to create the div. What I failed to realize was that when doing the appendChild, it creates elements in the DOM rather than just editing the source code. Therefore all of my when/where/who fields were being placed after the end of the todo-body div. I had to then change everything so I could just use appendChild to add the elements. Once it was done it seemed like a much easier implementation anyway and would work for scalability if I ever needed to add new input fields. 
+		I did run into an issue when creating the todo note with the correct input fields. The way I was creating it was by just editing the innerHTML to match the actual HTML code and putting that after a appendChild to create the div. What I failed to realize was that when doing the appendChild, it creates elements in the DOM rather than just editing the source code. Therefore all of my when/where/who fields were being placed after the end of the todo-body div. I had to then change everything so I could just use appendChild to add the elements. Once it was done it seemed like a much easier implementation anyway and would work for scalability if I ever needed to add new input fields.
+	</p>
+
+	<h4 class="blog-post">11/8 - Assignment #3</h4>
+	<p>
+		This assignment was actually a lot easier for me than some of the other ones.
+		After having to initially wrap my head around the asynchronous functions, I was able to get a pretty good understanding of NodeJS.
+		I ran into a problem when trying to make sure that if the user specified the root directory, the server would serve the index.html page.
+		Finally I found that I could use statSync(filename).isDirectory() to solve my issues.
+	</p>
+	<p>
+		I learned that there are probably many different ways to get a simple server up and running, and my implementation probably was not the quickest or easiest way.
+		I pretty much use the same three read file functions, the only difference is checking if it's a directory, file that exists or doesn't.
+		I'm sure there is an easier and more efficient way of implementing a solution but mine works pretty well.
+		The documentation page for NodeJS was the most helpful as I was able to get almost all the information I needed from there.
+		I had to Google how to check if it's a directory, and how to setup Cache-Control.
 	</p>
   </body>
 </html>
